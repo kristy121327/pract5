@@ -1,6 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <cctype>
 #include "Price.h"
 
 using namespace std;
