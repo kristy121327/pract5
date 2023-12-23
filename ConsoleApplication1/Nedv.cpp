@@ -1,7 +1,4 @@
-#include <iostream>
-#include <fstream>
 #include "Nedv.h"
-#include <cctype> 
 
 using namespace std;
 
@@ -37,13 +34,13 @@ bool Nedv::is_valid() const
 }
 bool Nedv::is_valid(string name)
 {
-    if (!isupper(name[0])) // встроенная функция для проверки заглавной буквы
+    if (!isupper(name[0])) // ГўГ±ГІГ°Г®ГҐГ­Г­Г Гї ГґГіГ­ГЄГ¶ГЁГї Г¤Г«Гї ГЇГ°Г®ГўГҐГ°ГЄГЁ Г§Г ГЈГ«Г ГўГ­Г®Г© ГЎГіГЄГўГ»
     {
         throw std::runtime_error("The name does not start with a capital letter(ne s zaglavnoi bykvi)");
     }
 
     for (size_t i = 1; i < name.length(); ++i) {
-        if (!islower(name[i])) // встроенная функция для проверки имени, чтобы после заглавной шли только строчные буквы
+        if (!islower(name[i])) // ГўГ±ГІГ°Г®ГҐГ­Г­Г Гї ГґГіГ­ГЄГ¶ГЁГї Г¤Г«Гї ГЇГ°Г®ГўГҐГ°ГЄГЁ ГЁГ¬ГҐГ­ГЁ, Г·ГІГ®ГЎГ» ГЇГ®Г±Г«ГҐ Г§Г ГЈГ«Г ГўГ­Г®Г© ГёГ«ГЁ ГІГ®Г«ГјГЄГ® Г±ГІГ°Г®Г·Г­Г»ГҐ ГЎГіГЄГўГ»
         {
             throw std::runtime_error("The name does not continue from lowercase letters(ne iz strochnix)");
         }
