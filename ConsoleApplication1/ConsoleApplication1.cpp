@@ -3,12 +3,6 @@
 #define DBG_NEW new( _NORMAL_BLOCK , __FILE__ , __LINE__ )
 #define newDBG_NEW
 
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <clocale>
-
 #include "Data.h"
 #include "Nedv.h"
 
