@@ -1,6 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <stdexcept>
 #include "Data.h"
 
 using namespace std;
